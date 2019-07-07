@@ -84,7 +84,9 @@ Every link should help the user understand why the suggestion will help improve 
 
 Simple short videos to help with wine knowledge.
 
+Trello
 
+https://trello.com/b/z3uLEnLk/project4-pairit
 
 Component	Priority	Estimated Time	Actual Time
 Pseudocode/Flow  H   7hrs
