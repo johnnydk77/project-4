@@ -81,6 +81,8 @@ PostMVP
 
 • Suggest a red and white for ingredient
 
+• Have a quiz on wine to keep from creating their own for update
+
 
 Architectural Design
 
