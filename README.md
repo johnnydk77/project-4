@@ -11,7 +11,7 @@ You are responsible for scheduling time with your squad to seek approval for eac
 
 Day	Deliverable	Status
 
-• Day 1	Project Description	Incomplete
+• Day 1	Project Description	Complete √
 
 • Day 2	Wireframes / Priority Matrix / Functional Components	Incomplete
 
@@ -99,7 +99,9 @@ https://www.cuvaison.com/
 
 ERD
 
-https://drive.google.com/open?id=11G7vsxNjYpbHPY5bjN8I4osxGBLofcK9
+https://drive.google.com/open?id=11JsjswulUImAuP0cKxI7lbH0XQxFIeVT
+
+https://winefolly-wpengine.netdna-ssl.com/wp-content/uploads/2013/05/18-noble-grapes-wine-varieties.jpg
 
 UI Components
 
