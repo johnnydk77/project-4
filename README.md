@@ -101,6 +101,8 @@ ERD
 
 https://drive.google.com/open?id=11JsjswulUImAuP0cKxI7lbH0XQxFIeVT
 
+https://winefolly-wpengine.netdna-ssl.com/wp-content/uploads/2013/05/18-noble-grapes-wine-varieties.jpg
+
 UI Components
 
 User needs to be able to have an easy and simple path to finding quick and easy wine pairings for a selected Ingredient option. 
