@@ -74,7 +74,7 @@ https://www.cuvaison.com/
 
 ERD
 
-https://drive.google.com/open?id=11-F4W1MVAXHHWawAUV9vowOnpY9TbCg8
+https://drive.google.com/open?id=11G7vsxNjYpbHPY5bjN8I4osxGBLofcK9
 
 UI Components
 
