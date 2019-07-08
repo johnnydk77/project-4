@@ -59,12 +59,13 @@ Links to additional wine knowledge
 Wine description glossary
 Styling
 Css Animations
+Random wine suggestion on Landing Page
 
 
 PostMVP
 Store locator for wine in NYC
 Add a cart option for purchase
-Have user upload their own wines for pairings
+Have user update db their own wines for pairings
 Suggest a red and white for ingredient
 
 
