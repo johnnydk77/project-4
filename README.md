@@ -51,22 +51,24 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 
 MVP
-Build and use an api
-Render data on page for Search by Ingredients
-Render date on page for Search by wine
-Embedded Video Instructions for wine basics
-Links to additional wine knowledge
-Wine description glossary
-Styling
-Css Animations
-Random wine suggestion on Landing Page
+
+• Build and use an api
+• Render data on page for Search by Ingredients
+• Render date on page for Search by wine
+• Embedded Video Instructions for wine basics
+• Links to additional wine knowledge
+• Wine description glossary
+• Styling
+• CSS Animations
+• Random wine suggestion on Landing Page
 
 
 PostMVP
-Store locator for wine in NYC
-Add a cart option for purchase
-Have user update db their own wines for pairings
-Suggest a red and white for ingredient
+
+• Store locator for wine in NYC
+• Add a cart option for purchase
+• Have user update db their own wines for pairings
+• Suggest a red and white for ingredient
 
 
 Architectural Design
