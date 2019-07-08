@@ -99,7 +99,7 @@ https://www.cuvaison.com/
 
 ERD
 
-https://drive.google.com/open?id=11G7vsxNjYpbHPY5bjN8I4osxGBLofcK9
+https://drive.google.com/open?id=11JsjswulUImAuP0cKxI7lbH0XQxFIeVT
 
 UI Components
 
