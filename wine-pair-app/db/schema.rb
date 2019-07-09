@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_07_08_185231) do
     t.string "description"
     t.string "flavor_profile"
     t.string "major_regions"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
