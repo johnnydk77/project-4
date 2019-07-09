@@ -8,6 +8,7 @@ class CreateWines < ActiveRecord::Migration[5.2]
       t.string :description
       t.string :flavor_profile
       t.string :major_regions
+      t.string :image_url
 
       t.timestamps
     end
