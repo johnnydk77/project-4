@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grape: MyString
+  color: MyString
+  fruit: MyString
+  body: MyString
+  description: MyString
+  flavor_profile: MyString
+  major_regions: MyString
+  image_url: MyString
+
+two:
+  grape: MyString
+  color: MyString
+  fruit: MyString
+  body: MyString
+  description: MyString
+  flavor_profile: MyString
+  major_regions: MyString
+  image_url: MyString

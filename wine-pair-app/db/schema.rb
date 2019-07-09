@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_09_154915) do
+ActiveRecord::Schema.define(version: 2019_07_09_195233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,12 +22,31 @@ ActiveRecord::Schema.define(version: 2019_07_09_154915) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "wineingreds", force: :cascade do |t|
+  create_table "whitewines", force: :cascade do |t|
+    t.string "grape"
+    t.string "color"
+    t.string "fruit"
+    t.string "body"
+    t.string "description"
+    t.string "flavor_profile"
+    t.string "major_regions"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "wines", force: :cascade do |t|
+  create_table "wineingreds", force: :cascade do |t|
+    t.bigint "redwine_id"
+    t.bigint "whitewine_id"
+    t.bigint "ingredient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ingredient_id"], name: "index_wineingreds_on_ingredient_id"
+    t.index ["redwine_id"], name: "index_wineingreds_on_redwine_id"
+    t.index ["whitewine_id"], name: "index_wineingreds_on_whitewine_id"
+  end
+
+  create_table "redwines", force: :cascade do |t|
     t.string "grape"
     t.string "color"
     t.string "fruit"
