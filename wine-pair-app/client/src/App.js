@@ -1,8 +1,9 @@
 import React , { Component }from 'react';
-import logo from './logo.svg';
 import { Route, Link } from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
-import SearchPage from './Components/SearchPage'
+import SearchPage from './Components/SearchPage';
+import ShowWines from './Components/ShowWines';
+import WineInfo from './Components/WineInfo';
 
 class App extends Component {
     state = {
@@ -13,7 +14,10 @@ class App extends Component {
   return (
     <div className="App">
       <Route exact path="/" render={() => <LandingPage/>}/>
-      <Route exact path="/LandingPage" render={() => <SearchPage/>} />
+      <Route exact path="/LandingPage" component={WineInfo} />
+      <Route exact path="/SearchPage" render={() => <SearchPage/>} />
+      <Route exact path="/ingredients/:ingredient_id/wineingred" render={() => <ShowWines/>} />
+      
     </div>
   );
 }

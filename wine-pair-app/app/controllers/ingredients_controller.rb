@@ -1,4 +1,4 @@
-class IngredientController < ApplicationController
+class IngredientsController < ApplicationController
     before_action :set_wine, only: [:show, :update, :destroy]
 
     # GET /ingredients
@@ -48,6 +48,6 @@ class IngredientController < ApplicationController
       def ingredient_params
         params.require(:ingredient).permit(:name, :preparation)
       end
-  end
-  
 end
+  
+
