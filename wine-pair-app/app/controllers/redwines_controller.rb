@@ -1,5 +1,5 @@
 class RedwinesController < ApplicationController
-  before_action :set_wine, only: [:show, :update, :destroy]
+  before_action :set_redwine, only: [:show, :update, :destroy]
 
   # GET /wines
   def index
@@ -10,6 +10,7 @@ class RedwinesController < ApplicationController
 
   # GET /wines/1
   def show
+    @redwine = Redwine.find params[:id]
     render json: @redwine
   end
 

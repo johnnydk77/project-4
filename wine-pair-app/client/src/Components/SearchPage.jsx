@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Route, Link, Redirect } from "react-router-dom"
-import ShowWines from './ShowWines'
+import { Route, Link, Redirect } from "react-router-dom";
+import ShowWines from './ShowWines';
 
 
 
@@ -66,6 +66,7 @@ class SearchPage extends Component {
                     </div>
                     <input type="submit" value="Submit" />
                 </form>
+                <button className="show-home-button"><Link to='/'>Home</Link></button>
             </div>
 
         )

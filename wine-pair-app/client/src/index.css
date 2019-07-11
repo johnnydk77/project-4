@@ -1,4 +1,18 @@
+.home-container {
+  background-color: rgb(182, 216, 245);
+  border: 5px solid black;
+}
+
 .app-title {
-  color: red;
-  background: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fres.cloudinary.com%2Fsimpleview%2Fimage%2Fupload%2Fv1446143006%2Fclients%2Fhouston%2FWine_grapes_939b44b9-9612-4739-abd8-b4322371cffe.jpg&imgrefurl=https%3A%2F%2Fwww.visithoustontexas.com%2Ftravel-planning%2Fitineraries-and-trip-ideas%2Fwine-trail-escape%2F&docid=VhQPA677xW4zgM&tbnid=j3YBYdGY3byDMM%3A&vet=10ahUKEwjvs9yhyKrjAhXjQd8KHV-XB18QMwilAShUMFQ..i&w=3431&h=1646&safe=active&bih=717&biw=1309&q=wine%20and%20food%20in%20a%20vineyard&ved=0ahUKEwjvs9yhyKrjAhXjQd8KHV-XB18QMwilAShUMFQ&iact=mrc&uact=8')
+  color: rgb(230, 154, 243);
+
+}
+
+.photo-main {
+  border: 4px black;
+}
+
+.button-home1 {
+  border: 3px solid black;
+  border-radius: 10px;
 }

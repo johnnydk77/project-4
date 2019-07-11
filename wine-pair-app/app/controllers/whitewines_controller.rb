@@ -1,5 +1,5 @@
 class WhitewinesController < ApplicationController
-    before_action :set_wine, only: [:show, :update, :destroy]
+    before_action :set_whitewine, only: [:show, :update, :destroy]
 
   # GET /wines
   def index
@@ -10,6 +10,8 @@ class WhitewinesController < ApplicationController
 
   # GET /whitewines/1
   def show
+    puts 'here'
+    @whitewine = Whitewine.find params[:id]
     render json: @whitewine
   end
 
