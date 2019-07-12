@@ -1,29 +1,119 @@
-.home-container {
-  background-color: rgb(182, 216, 245);
-  border: 5px solid black;
+.App {
+  display: flex;
+  justify-content:center;
+  align-content: center;  
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.home-container { 
+  background-color: #500908;
+  border: 5px solid  #130501;
+  border-radius: 5px;
   text-align: center;
   display: inline-block;
   position: absolute;
+  font-family: 'Poppins', sans-serif;
+  align-content: center;
+  width: 95%;
+  height: 98%;
+  /* margin: 10px; */
 }
 
 .app-title {
-  color: rgb(230, 154, 243);
+  color: #BCBDC0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 75px;
+  margin: auto 0;
+}
+
+.landing-par {
+  display: flex;
+    text-align: center;
+    max-width: 1000px;
+    position: absolute;
+    align-content: center;  
+    justify-content: center;
+    margin-left: 11%;
+    color:black;
+    font-size:20px;
+    color: rgb(160, 102, 73);
+  
+
 
 }
 
-.photo-main {
-  border: 4px black;
+.landing-image {
+  height: 400px;
+  width: 1100px; 
+}
+
+.homepage-text {
+  display: flex;
+  color: #BCBDC0;
+  justify-content:center;
+  align-content: center;
+  width: 500px;
+  margin-left: 30%;
+  font-size: 21px;
 }
 
 .button-home1 {
-  border: 3px solid black;
+  border: 4px solid black;
+  background-color: rgb(253, 235, 213);
   border-radius: 10px;
+  padding: 25px;
+  margin: 25px;
+}
+
+.button-wine-info {
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: rgb(253, 235, 213);
+  padding: 25px;
+
+}
+
+.landing-button-push {
+    font-size: 20px;
+    color: #6D1E1E;
+}
+
+.info-body {
+  background-color: #220901;
 }
 
 .wine-info-wrapper{
   margin: 15px;
   
 }
+
+
+
+
+.wine-info-header {
+  display: flex;
+  justify-content: center;
+  border: 3px solid #220901;
+  border-radius: 8px;
+  color: rgb(26, 21, 21);
+  width: 800px;
+  margin: auto;
+  background-color: rgb(253, 235, 213);
+  opacity: 0.8;
+  
+
+}
+
+.info-and-buy {
+  color: #BCBDC0;
+
+}
+
+.wine-main {
+  color: #BCBDC0;
+}
+
 
 .row {
   display: inline-flex;
@@ -41,16 +131,74 @@
 }
 
 .column-open {
-  background-color: rgb(182, 216, 245);
+ text-align: center;
+  background-color: #941C2F;
   height: auto;
+  border: 3px solid #220901;
+  border-radius: 10px;
 }
 
 .column-pour {
-  background-color: rgb(182, 216, 245);
+  text-align: center;
+  background-color: #941B0C;
   height: auto;
+  border: 3px solid rgb(63, 51, 51);
+  border-radius: 10px;
 }
 
 .column-drink {
-  background-color: rgb(182, 216, 245);
+  text-align: center;
+  background-color: #621708;
   height: auto;
+  border: 3px solid rgb(46, 40, 40);
+  border-radius: 10px;
+ 
+}
+
+.color-chart-1 {
+  display: flex;
+  flex-direction: wrap;
+  border: 3px solid rgb(46, 40, 40);
+  border-radius: 10px;
+  margin: auto;
+  height: 350;
+ 
+  
+}
+
+.color-chart-2 {
+  display: flex;
+  flex-direction: wrap;
+  border: 3px solid rgb(46, 40, 40);
+  border-radius: 10px;
+  margin: auto;
+  height: 350;
+  
+}
+
+.home-button-info {
+  display: flex;
+  justify-content: center;
+
+ 
+  /* height: 50px; */
+}
+
+.show-home-button {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(253, 235, 213);
+  height: 60px;
+  width: 200px;
+  color: rgb(109, 30, 30);
+  font-size: 35px;
+  border: 3px solid rgb(46, 40, 40);
+  border-radius: 10px;
+
+
+}
+
+.show-home-button-1 {
+  color: rgb(109, 30, 30);
 }
