@@ -13,13 +13,13 @@ Day	Deliverable	Status
 
 • Day 1	Project Description	Complete √
 
-• Day 2	Wireframes / Priority Matrix / Functional Components	Incomplete
+• Day 2	Wireframes / Priority Matrix / Functional Components	Complete √
 
-• Day 3	Core Application Structure (HTML, CSS, etc.)	Incomplete
+• Day 3	Core Application Structure (HTML, CSS, etc.)	In Progress
 
 • Day 4	Pseudocode / actual code	Incomplete
 
-• Day 5	Initial Clickable Model	Incomplete
+• Day 5	Initial Clickable Model	Close
 
 • Day 6	MVP	Incomplete
 
@@ -52,17 +52,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 MVP
 
-• Build and use an api
+• Build and use an api		Complete √
 
-• Render data on page for Search by Ingredients
+• Render data on page for Search by Ingredients	Complete √
 
-• Render date on page for Search by wine
 
-• Embedded Video Instructions for wine basics
+• Embedded Video Instructions for wine basics Complete √
 
-• Links to additional wine knowledge
+• Links to additional wine knowledge Almost Complete....
 
-• Wine description glossary
+• Wine description glossary In Progress.....
 
 • Styling
 
@@ -79,7 +78,7 @@ PostMVP
 
 • Have user update db their own wines for pairings
 
-• Suggest a red and white for ingredient
+• Suggest a red and white for ingredient  Complete √
 
 • Have a quiz on wine to keep from creating their own for update
 
@@ -116,10 +115,10 @@ Trello
 https://trello.com/b/z3uLEnLk/project4-pairit
 
 Component	Priority	Estimated Time	Actual Time
-Pseudocode/Flow  H   7hrs
-Working with API	H	8hrs
-Rendering  H	8hrs	
-Videos    H    9hrs
+Pseudocode/Flow  H   7hrs			8hrs
+Working with API	H	8hrs		16hrs
+Rendering  H	8hrs				8hrs
+Videos    H    9hrs 				2hrs
 Stylings    H   20hrs	
 Total	H	44hrs	
 
@@ -127,9 +126,7 @@ Total	H	44hrs
 Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
-SAMPLE.....
-Function	Description
-Capitalize	This will capitalize the first letter in a string of text
+
 
 Additional Libraries
 Use this section to list all supporting libraries and thier role in the project.
@@ -149,12 +146,12 @@ function reverse(string) {
 Change Log
 Use this section to document what changes were made and the reasoning behind those changes.
 
-SAMPLE.....
-Original Plan	Outcome
-Have one Book component	Split that component into BookInfo and BookInteraction as the component grew too complicated
-Issues and Resolutions
-Use this section to list of all major issues encountered and their resolution.
+After conducting for field research everyone I talked to said they would rather have the suggested wine pairing come from a particular cuisine and not an ingredient. This changed how I had to set the tables on the back end
 
 SAMPLE.....
-ERROR: app.js:34 Uncaught SyntaxError: Unexpected identifier
-RESOLUTION: Missing comma after first object in sources {} object
+Original Plan	Outcome
+Have the 
+
+SAMPLE.....
+ERROR: TypeError: this.state.redWine.map is not a function
+RESOLUTION: I was trying to map over the array for the data. Couldn't get the data to render. Well? That's because in this component the data was an object. So I had to make nested axios calls to get all the data.
