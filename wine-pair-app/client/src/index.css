@@ -1,6 +1,9 @@
 .home-container {
   background-color: rgb(182, 216, 245);
   border: 5px solid black;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
 }
 
 .app-title {
@@ -15,4 +18,39 @@
 .button-home1 {
   border: 3px solid black;
   border-radius: 10px;
+}
+
+.wine-info-wrapper{
+  margin: 15px;
+  
+}
+
+.row {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.column {
+  display:inline-flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin:10px; 
+}
+
+.column-open {
+  background-color: rgb(182, 216, 245);
+  height: auto;
+}
+
+.column-pour {
+  background-color: rgb(182, 216, 245);
+  height: auto;
+}
+
+.column-drink {
+  background-color: rgb(182, 216, 245);
+  height: auto;
 }

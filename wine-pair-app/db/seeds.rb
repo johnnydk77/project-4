@@ -106,7 +106,7 @@ whitewine2 = Whitewine.create!({
     flavor_profile: 'Honey, Honeycomb, Beesxwax,  Ginger, Citrus Blossom, Rubber, and Diesel fuel',
     major_regions: 'Germany, Australia, United States, France, Austria, and New Zealand ',
     description: 'Traditionally, most Riesling wines are on the sweeter end of the spectrum, in order to balance the wine’s high acidity. This aromatic wine offers primary fruit aromas of orchard fruits like nectarine, apricot, honey-crisp apple, and pear. Besides fruit, you’ll often smell things like honeycomb, jasmine, or lime peel, along with a striking aroma that smells similar to petrol or petroleum wax (a natural compound called TDN).',
-   image_url:'/https://cdn.newsday.com/polopoly_fs/1.27453836.1550691845!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg'
+   image_url:'https://cdn.newsday.com/polopoly_fs/1.27453836.1550691845!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg'
 })
 whitewine3 = Whitewine.create!({
     grape: 'Sauvignon Blanc',

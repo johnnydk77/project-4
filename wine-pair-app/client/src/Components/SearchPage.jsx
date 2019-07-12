@@ -13,14 +13,14 @@ class SearchPage extends Component {
         this.state = {
             redirect: false,
             foodItems: '',
-            foodItemId:''
+            foodItemId: ''
 
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
 
     }
-    async componentDidMount(){
+    async componentDidMount() {
         const res = await axios.get('http://localhost:3000/ingredients')
         this.setState({
             foodItems: res.data
@@ -45,11 +45,13 @@ class SearchPage extends Component {
     render() {
         console.log(this.state.foodItems)
         return (
-            <div>
+            <div className="search-container">
                 {this.state.redirect && (
                     <Redirect to={`ingredients/${this.state.foodItemId && this.state.foodItemId}/wineingred`} />
                 )}
+
                 <form onSubmit={this.handleSubmit}>
+
                     <div className="dropdown-foods-container">
                         <label>
                             <select
@@ -60,12 +62,14 @@ class SearchPage extends Component {
                                 {this.state.foodItems && this.state.foodItems.map(item => (
                                     <option key={item.id} value={item.id}>{item.name}</option>
                                 ))}
-                         
+
                             </select>
                         </label>
                     </div>
                     <input type="submit" value="Submit" />
                 </form>
+                
+                <img src="https://images.unsplash.com/photo-1515875071256-3c9d908eb803?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="search image" height="700" width="1200"/>
                 <button className="show-home-button"><Link to='/'>Home</Link></button>
             </div>
 
