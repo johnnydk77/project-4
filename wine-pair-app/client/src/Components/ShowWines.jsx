@@ -42,7 +42,6 @@ class ShowWines extends Component {
                         <h3 className="show-header-4">Your perfect Red Wine Pairing is {this.state.redWine && this.state.redWine.grape}!</h3>
                         <ul className="redwine-list">
                             <h2>{this.state.redWine && this.state.redWine.grape}</h2>
-                            {/* <li>{this.state.redWine && this.state.redWine.color}</li> */}
                             <li>{this.state.redWine && this.state.redWine.fruit}</li>
                             <li>{this.state.redWine && this.state.redWine.flavor_profile}</li>
                             <li>{this.state.redWine && this.state.redWine.major_regions}</li>
@@ -58,7 +57,6 @@ class ShowWines extends Component {
                         <h3 className="show-header-4">Your perfect White Wine Pairing is {this.state.whiteWine && this.state.whiteWine.grape}!</h3>
                         <ul className="whitewine-list">
                             <h2>{this.state.whiteWine && this.state.whiteWine.grape}</h2>
-                            {/* <li>{this.state.whiteWine && this.state.whiteWine.color}</li> */}
                             <li>{this.state.whiteWine && this.state.whiteWine.fruit}</li>
                             <li>{this.state.whiteWine && this.state.whiteWine.flavor_profile}</li>
                             <li>{this.state.whiteWine && this.state.whiteWine.major_regions}</li>
