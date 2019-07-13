@@ -24,7 +24,7 @@ class LandingPage extends Component {
 
                 <div className="landing-top">
                     <h1 className="app-title">Pair It!</h1>
-                    <p className="landing-par">In these always on the go times it is difficult to know what wine pairs with that perfect meal. Pair It! Let us be your solution for making tonight's wine perfect!</p>
+                    <p className="landing-par">Properly pairing wine with your meal enhances your experience of the meal. Let us help you pair the perfect wine with your perfect meal. Pair It!</p>
                 </div>
 
 

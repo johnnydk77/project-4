@@ -17,14 +17,15 @@
   align-content: center;
   width: 95%;
   height: 98%;
-  /* margin: 10px; */
+ 
 }
 
 .app-title {
-  color: #BCBDC0;
+  color: rgb(230, 232, 238);
   font-family: 'Poppins', sans-serif;
   font-size: 75px;
   margin: auto 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .landing-par {
@@ -37,7 +38,7 @@
     margin-left: 11%;
     color:black;
     font-size:20px;
-    color: rgb(160, 102, 73);
+    color: #220901;
   
 
 
@@ -180,8 +181,6 @@
   display: flex;
   justify-content: center;
 
- 
-  /* height: 50px; */
 }
 
 .show-home-button {
@@ -201,4 +200,191 @@
 
 .show-home-button-1 {
   color: rgb(109, 30, 30);
+}
+
+ 
+
+.show-wines-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: space-between; */
+  flex-flow: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border: 5px solid #0f0102;
+  border-radius: 20px;
+  height: 95%;
+  width: 95%;
+  background-color: #571a20;
+}
+
+.show-columns {
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.show-header {
+  color: #BCBDC0;
+  font-size: 45px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+.show-header-2 {
+  color: #BCBDC0;
+  font-size: 35px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.show-header-3 {
+  color: #BCBDC0;
+  font-size: 35px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.redwine-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 1000px;
+  width: 600px;
+  margin: 20px;
+  border: 5px solid #1b0305;
+  font-size: 18px;
+  padding: 20px;
+  /* overflow: scroll; */
+  background-color: rgb(236, 234, 219);
+  color: rgb(27, 12, 29);
+ 
+  
+}
+
+.whitewine-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 900px;
+  width: 600px;
+  margin: 20px;
+  border: 5px solid #1b0305;
+  border-radius: 20px;
+  list-style: none;
+  font-size: 18px;
+  padding: 20px;
+  background-color: rgb(236, 234, 219);
+  color: rgb(27, 12, 29);
+}
+.show-columns{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.redwine-list{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+ width: min-content;
+ height:min-content;
+ margin: 20px;
+ list-style-type: none;
+ text-align: center;
+ height: 900px;
+  width: 600px;
+}
+
+.show-header-4 {
+  font-size: 30px;
+
+}
+
+.show-grape {
+  font-size: 30px;
+}
+
+.wine-image {
+  object-fit: cover;
+  width: 500px;
+  height: 350px;
+}
+
+.show-home-button-wine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(253, 235, 213);
+  height: 60px;
+  width: 200px;
+  color: rgb(109, 30, 30);
+  font-size: 35px;
+  border: 3px solid rgb(46, 40, 40);
+  border-radius: 10px;
+  margin: auto; 
+
+
+}
+
+.show-home-button-search {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(253, 235, 213);
+  height: 60px;
+  width: 200px;
+  color: rgb(109, 30, 30);
+  font-size: 35px;
+  border: 3px solid rgb(46, 40, 40);
+  border-radius: 10px;
+  position: absolute; bottom: 0px; 
+ 
+}
+
+.search-container {
+  display: flex;
+  justify-content:center;
+  align-content: center;  
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-foods {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  height: 100px;
+  width: 450px;
+  font-size: 40px;
+  background-color: rgb(236, 234, 219);
+  color: #621708;
+  border: 5px solid #0f0102;
+  border-radius: 20px;
+}
+
+.search-image {
+  width: 100%;
+  height: auto;
+  border: 5px solid #0f0102;
+  border-radius: 20px;
+}
+
+.submit-search {
+ width: 25%;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 290px;
+  left: 550px;
+  padding: 20px 60px;
+  border: 5px solid #0f0102;
+  border-radius: 20px;
+  font-size: 30px;
+  background-color: rgb(253, 235, 213);
+  color: #621708;
+  
 }

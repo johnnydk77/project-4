@@ -31,46 +31,58 @@ class ShowWines extends Component {
     }
 
     render() {
-       
+
         return (
             <div className="show-wines-wrapper">
-                <div className="row-show">
-                    <div className="column-show">
-                        <h1 className="show-header">Red or White!</h1>
-                        <h2 className="show-header-2">You Choose...</h2>
-                        <h3 className="show-header-3">Both will only enhance your meal.</h3>
-                        <h3 className="show-header-4">Your perfect Red Wine Pairing is {this.state.redWine && this.state.redWine.grape}!</h3>
-                        <ul className="redwine-list">
-                            <h2 className="show-grape">{this.state.redWine && this.state.redWine.grape}</h2>
-                            <li className="show-fruit">{this.state.redWine && this.state.redWine.fruit}</li>
-                            <li className="show-flavor">{this.state.redWine && this.state.redWine.flavor_profile}</li>
-                            <li className="show-region">{this.state.redWine && this.state.redWine.major_regions}</li>
-                            <li className="show-description">{this.state.redWine && this.state.redWine.description}</li>
-                            <img src={this.state.redWine && this.state.redWine.image_url} className="redwine-image" alt="img red" height="300" width="500" />
-                        </ul>
-                    </div>
+
+                <div className="show-wine-main">
+                    <h1 className="show-header">Red or White!</h1>
+                    <h2 className="show-header-2">Your Choice...</h2>
+                    <h3 className="show-header-3"> Either will be perfect!</h3>
+
+                </div>
+
+                <div className="show-columns">
+
+
+                    <ul className="redwine-list">
+                        <div>
+                            <h3 className="show-header-4">Your perfect Red Wine Pairing is......</h3>
+                        </div>
+                        <h2 className="show-grape">{this.state.redWine && this.state.redWine.grape}!</h2>
+
+                        <div><li className="show-fruit"> - {this.state.redWine && this.state.redWine.fruit}</li>
+                            <li className="show-flavor"> - {this.state.redWine && this.state.redWine.flavor_profile}</li>
+                            <li className="show-region"> - {this.state.redWine && this.state.redWine.major_regions}</li>
+                            <li className="show-description"> - {this.state.redWine && this.state.redWine.description}</li>
+                            <img src={this.state.redWine && this.state.redWine.image_url} className="wine-image" alt="img red"/>
+                        </div>
+                    </ul>
+
+
+
+
+
+                    <ul className="whitewine-list">
+                        <div>
+                            <h3 className="show-header-4">Your perfect White Wine Pairing is.....</h3>
+                        </div>
+                        <div>
+                            <h2 className="show-grape">{this.state.whiteWine && this.state.whiteWine.grape}!</h2>
+                            <li className="show-fruit"> - {this.state.whiteWine && this.state.whiteWine.fruit}</li>
+                            <li className="show-flavor"> - {this.state.whiteWine && this.state.whiteWine.flavor_profile}</li>
+                            <li className="show-region"> - {this.state.whiteWine && this.state.whiteWine.major_regions}</li>
+                            <li className="show-description"> - {this.state.whiteWine && this.state.whiteWine.description}</li>
+                            <img src={this.state.whiteWine && this.state.whiteWine.image_url} className="wine-image" alt="img white"/>
+                        </div>
+                    </ul>
+
                 </div>
 
 
-                <div className="row-show">
-                    <div className="column-show">
-                        <h3 className="show-header-4">Your perfect White Wine Pairing is {this.state.whiteWine && this.state.whiteWine.grape}!</h3>
-                        <ul className="whitewine-list">
-                            <h2 className="show-grape">{this.state.whiteWine && this.state.whiteWine.grape}</h2>
-                            <li className="show-fruit">{this.state.whiteWine && this.state.whiteWine.fruit}</li>
-                            <li className="show-flavor">{this.state.whiteWine && this.state.whiteWine.flavor_profile}</li>
-                            <li className="show-region">{this.state.whiteWine && this.state.whiteWine.major_regions}</li>
-                            <li className="show-description">{this.state.whiteWine && this.state.whiteWine.description}</li>
-                            <img src={this.state.whiteWine && this.state.whiteWine.image_url} className="whitewine-image" alt="img white" height="300" width="500" />
-
-                        </ul>
-
-                    </div>
-
-                </div>
 
                 <div className="button-show">
-                    <button className="show-home-button"><Link to='/'>Home</Link></button>
+                    <button className="show-home-button-wine"><Link to='/'>Home</Link></button>
                 </div>
 
             </div >

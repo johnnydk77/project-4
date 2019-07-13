@@ -66,11 +66,11 @@ class SearchPage extends Component {
                             </select>
                         </label>
                     </div>
-                    <input type="submit" value="Submit" />
+                    <input className="submit-search" type="submit" value="Submit" />
                 </form>
                 
-                <img src="https://images.unsplash.com/photo-1515875071256-3c9d908eb803?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="search image" height="700" width="1200"/>
-                <button className="show-home-button"><Link to='/'>Home</Link></button>
+                <img src="https://images.unsplash.com/photo-1515875071256-3c9d908eb803?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="search image" className="search-image"/>
+                <button className="show-home-button-search"><Link to='/'>Home</Link></button>
             </div>
 
         )
