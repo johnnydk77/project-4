@@ -17,11 +17,11 @@ class ShowWines extends Component {
 
     async componentDidMount() {
 
-        const res = await axios.get(`http://localhost:3000/ingredients/${this.props.match.params.ingredient_id}/wineingred`)
+        const res = await axios.get(`/ingredients/${this.props.match.params.ingredient_id}/wineingred`)
         const showWines = res.data.wineingreds
 
-        const getWhite = await axios.get(`http://localhost:3000/whitewines/${showWines[0].whitewine_id}`)
-        const getRed = await axios.get(`http://localhost:3000/redwines/${showWines[0].redwine_id}`)
+        const getWhite = await axios.get(`/whitewines/${showWines[0].whitewine_id}`)
+        const getRed = await axios.get(`/redwines/${showWines[0].redwine_id}`)
 
         this.setState({
             redWine: getRed.data,
@@ -37,18 +37,16 @@ class ShowWines extends Component {
 
                 <div className="show-wine-main">
                     <h1 className="show-header">Red or White!</h1>
-                    <h2 className="show-header-2">Your Choice...</h2>
-                    <h3 className="show-header-3"> Either will be perfect!</h3>
+                    
+                  
 
                 </div>
 
                 <div className="show-columns">
-
+                
 
                     <ul className="redwine-list">
-                        <div>
-                            <h3 className="show-header-4">Your perfect Red Wine Pairing is......</h3>
-                        </div>
+                    <h2 className="show-header-4">Your perfect White Wine Pairing is.....</h2>
                         <h2 className="show-grape">{this.state.redWine && this.state.redWine.grape}!</h2>
 
                         <div><li className="show-fruit"> - {this.state.redWine && this.state.redWine.fruit}</li>
@@ -64,10 +62,9 @@ class ShowWines extends Component {
 
 
                     <ul className="whitewine-list">
+                        
                         <div>
-                            <h3 className="show-header-4">Your perfect White Wine Pairing is.....</h3>
-                        </div>
-                        <div>
+                        <h2 className="show-header-4">Your perfect White Wine Pairing is.....</h2>
                             <h2 className="show-grape">{this.state.whiteWine && this.state.whiteWine.grape}!</h2>
                             <li className="show-fruit"> - {this.state.whiteWine && this.state.whiteWine.fruit}</li>
                             <li className="show-flavor"> - {this.state.whiteWine && this.state.whiteWine.flavor_profile}</li>

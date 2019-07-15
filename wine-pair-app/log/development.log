@@ -29827,3 +29827,838 @@ Processing by RedwinesController#show as HTML
 Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/ingredients" for ::1 at 2019-07-13 16:40:09 -0400
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:8
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-07-13 16:45:49 -0400
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (1.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:8
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:45:52 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.4ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:45:52 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.5ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:45:52 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:47:50 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.3ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.7ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:47:50 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (2.1ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:47:50 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.9ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:48:32 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (25.2ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.7ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 30ms (Views: 1.6ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:48:32 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (1.3ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:48:32 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:48:58 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (5.1ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (1.4ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 11ms (Views: 1.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:48:58 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.3ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:48:58 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:49:51 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (4.9ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.4ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:49:51 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.9ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:49:52 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (5.4ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:52:41 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.3ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:52:41 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (1.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:52:41 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:55:13 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (24.1ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.6ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 28ms (Views: 1.4ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:55:13 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (1.1ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:55:13 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.7ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:16 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (54.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (6.5ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 65ms (Views: 1.7ms | ActiveRecord: 60.9ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:16 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:16 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.4ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:23 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:23 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:23 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:27 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (24.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (37.1ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 68ms (Views: 3.5ms | ActiveRecord: 61.9ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:27 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:27 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:33 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (39.3ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 44ms (Views: 1.7ms | ActiveRecord: 39.8ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:33 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.4ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:33 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:36 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (22.8ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 27ms (Views: 1.5ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:36 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.1ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:36 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:40 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.3ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.4ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:40 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:40 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (3.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:42 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.5ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (1.0ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:42 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:42 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/4/wineingred" for ::1 at 2019-07-13 16:58:52 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"4"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/whitewines/2" for ::1 at 2019-07-13 16:58:53 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWhitewine Load (0.3ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/redwines/1" for ::1 at 2019-07-13 16:58:53 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRedwine Load (0.1ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-07-13 17:03:09 -0400
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:8
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:03:14 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.6ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:03:14 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:03:14 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:04:12 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (6.3ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.3ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 10ms (Views: 1.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:04:12 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (1.1ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:04:12 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (14.7ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:04:21 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (11.6ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 15ms (Views: 1.6ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:04:21 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (1.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:04:21 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:04:45 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:04:45 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:04:45 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:04:48 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (7.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (1.4ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (2.1ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 15ms (Views: 1.7ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:04:48 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:04:48 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:04:59 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (26.6ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 31ms (Views: 1.7ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:04:59 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (0.8ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:04:59 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.1ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:05:07 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (6.9ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.4ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.5ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 13ms (Views: 2.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:05:07 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (3.8ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:05:07 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:06:31 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.1ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.1ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:06:31 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:06:31 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (0.3ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients/6/wineingred" for ::1 at 2019-07-13 17:06:32 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"6"}
+  [1m[36mIngredient Load (11.9ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.2ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 6]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (15.3ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 31ms (Views: 1.7ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/whitewines/4" for ::1 at 2019-07-13 17:06:33 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWhitewine Load (0.2ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/redwines/2" for ::1 at 2019-07-13 17:06:33 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRedwine Load (6.7ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-07-15 08:54:26 -0400
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (7.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:8
+Completed 200 OK in 23ms (Views: 13.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/ingredients/2/wineingred" for ::1 at 2019-07-15 08:54:30 -0400
+Processing by WineingredController#index as HTML
+  Parameters: {"ingredient_id"=>"2"}
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/wineingred_controller.rb:6
+  [1m[36mWineingred Load (0.6ms)[0m  [1m[34mSELECT "wineingreds".* FROM "wineingreds" WHERE "wineingreds"."ingredient_id" = $1[0m  [["ingredient_id", 2]]
+  ↳ app/controllers/wineingred_controller.rb:9
+  [1m[36mRedwine Load (0.4ms)[0m  [1m[34mSELECT "redwines".* FROM "redwines" WHERE "redwines"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/wineingred_controller.rb:10
+Completed 200 OK in 19ms (Views: 4.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/whitewines/3" for ::1 at 2019-07-15 08:54:30 -0400
+Processing by WhitewinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWhitewine Load (0.5ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:46
+  [1m[36mCACHE Whitewine Load (0.0ms)[0m  [1m[34mSELECT  "whitewines".* FROM "whitewines" WHERE "whitewines"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/whitewines_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/redwines/4" for ::1 at 2019-07-15 08:54:30 -0400
+Processing by RedwinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRedwine Load (0.2ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:45
+  [1m[36mCACHE Redwine Load (0.0ms)[0m  [1m[34mSELECT  "redwines".* FROM "redwines" WHERE "redwines"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/redwines_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-07-15 09:04:13 -0400
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:8
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+

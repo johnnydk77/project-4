@@ -21,7 +21,7 @@ class SearchPage extends Component {
 
     }
     async componentDidMount() {
-        const res = await axios.get('http://localhost:3000/ingredients')
+        const res = await axios.get('/ingredients')
         this.setState({
             foodItems: res.data
         })
