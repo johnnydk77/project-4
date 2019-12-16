@@ -54,7 +54,7 @@ class WineInfo extends Component {
                         </div>
 
                         <div className="color-chart-1">
-                            <img src="https://www.google.com/search?q=red+wine+cooler+chart&newwindow=1&safe=active&rlz=1C5CHFA_enUS833US833&sxsrf=ACYBGNSPFz6vBIo0jhevfswZI-UVWWglLQ:1576512083854&source=lnms&tbm=isch&sa=X&ved=2ahUKEwii1_eVxbrmAhXDUt8KHW4HBkEQ_AUoAnoECA0QBA&biw=1440&bih=789#imgrc=izw6sZeEbGBLaM:" alt="red wine color chart" height="450" width="400" />
+                            <img src="https://media.winefolly.com/red-wine-boldness-chart-by-wine-folly.png" alt="red wine color chart" height="450" width="400" />
                         </div>
 
                         <div className="color-chart-2">
