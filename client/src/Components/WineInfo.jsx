@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { redWine } from '../assets/redWine.png';
+// import { redWine } from '../assets/redWine.png';
 
 
 
@@ -55,7 +55,7 @@ class WineInfo extends Component {
                         </div>
 
                         <div className="color-chart-1">
-                            <img src= {redWine} alt="red wine color chart" height="450" width="400" />
+                            <img src= {"https://media.winefolly.com/red-wine-boldness-chart-by-wine-folly.png"} alt="red wine color chart" height="450" width="400" />
                         </div>
 
                         <div className="color-chart-2">
